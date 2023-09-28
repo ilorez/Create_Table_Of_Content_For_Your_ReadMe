@@ -22,7 +22,7 @@ function CreateTableOfContent(path, level = 2) {
         const regex = new RegExp(`\n${dashLevel} [^\n]*\n`, "g")
         const titles = data.match(regex)
         // console.log(data)
-        console.log(titles)
+        // console.log(titles)
         if (titles === null) {
             console.error(`not titles start with ${dashLevel}`)
             return
@@ -40,8 +40,8 @@ function CreateTableOfContent(path, level = 2) {
             return
         }
         const content = titles.map(title => {
-            t = title.slice(3, -1)
-            return `- [${t}](#${t.replace(/\s/g, "-").toLowerCase()}) \n`
+            t = title.slice(4, -1)
+            return `- [${t}](#${t.replace(/[&?#/%=+,;.!]*/g, "").trim().replace(/\s/g, "-").toLowerCase()}) \n`
         })
 
 

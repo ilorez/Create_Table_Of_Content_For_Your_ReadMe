@@ -1,13 +1,13 @@
 # Hello there
 
-
 ## Table of Content
-- [Introduction](#introduction) 
-- [What this script do](#what-this-script-do) 
-- [Who to use ?](#who-to-use-?) 
-- [Important Notes](#important-notes) 
- 
-## Introduction
+
+- [1 - Introduction](#1---introduction)
+- [What this script do](#what-this-script-do)
+- [Who to use ?](#who-to-use)
+- [Important Notes](#important-notes)
+
+## 1 - Introduction
 
 this repo it's for guys who are lazy like me to create table of content to `.md` files!
 
