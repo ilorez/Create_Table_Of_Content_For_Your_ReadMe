@@ -1,6 +1,7 @@
 const fs = require('fs');
 // replace path with your README.md file path
-const path = './README.md';
+const path = './yourReadme.md';
+const level = 2
 
 /**
  * @function
@@ -18,12 +19,15 @@ function CreateTableOfContent(path, level = 2) {
         }
         const dashLevel = "#".repeat(level);
         const index = data.indexOf("##")
-        const regex = new RegExp(`${dashLevel}.{1,}\n`, "g")
+        const regex = new RegExp(`${dashLevel} [^\n]*\n`, "g")
         const titles = data.match(regex)
+        // console.log(data)
+        // console.log(titles)
         if (titles === null) {
             console.error(`not titles start with ${dashLevel}`)
             return
         }
+        // return
         if (titles[0] === "## Table of Content\n") {
             data = data.slice(0, index) + data.slice(data.indexOf("##", index + 1))
             fs.writeFile(path, data, (err) => {
@@ -53,4 +57,4 @@ function CreateTableOfContent(path, level = 2) {
     })
 }
 
-CreateTableOfContent(path);
+CreateTableOfContent(path, level);
