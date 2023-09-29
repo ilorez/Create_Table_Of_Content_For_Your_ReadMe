@@ -4,8 +4,8 @@
 ## Table of Content
 - [Introduction](#introduction) 
 - [For what this script](#for-what-this-script) 
-- [how to use it ?](#how-to-use-it) 
-- [Dummeis Notes](#dummeis-notes) 
+- [how to use it](#how-to-use-it) 
+- [Dummies Notes](#dummies-notes) 
  
 ## Introduction
 
@@ -15,13 +15,13 @@ this repo it's for guys who are lazy like me to create table of content to `.md`
 
 it's just make table of content for your readme file, like the table of content upove acctuly it's created with this script.
 
-## how to use it ?
+## how to use it
 
 you need just to copy script or clone this repo and change the `path` and `level` inside the `script.js` file.
 path : path to your readme file or any `.md` file.
 level : the number of `#` --> for example this Introduction title have 2 # before it so his level it's 2.
 
-## Dummeis Notes
+## Dummies Notes
 
 this version it's have a lot of issues and will not give you what you need if you didn't read the next:
 
