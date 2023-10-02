@@ -6,8 +6,8 @@
 - [Introduction](#introduction) 
 - [For what this script](#for-what-this-script) 
 - [how to use it](#how-to-use-it) 
-  - [path : ](#path) 
-  - [level : ](#level) 
+  - [path : ](#path-) 
+  - [level : ](#level-) 
 - [Dummies Notes](#dummies-notes) 
  
 ## Introduction

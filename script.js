@@ -24,7 +24,7 @@ Table of content:
 
 const fs = require('fs');
 // replace path with your README.md file path
-const path = './exampleREADME.md';
+const path = './README.md';
 const levels = [2, 3]
 
 /**
@@ -83,7 +83,7 @@ function CreateTableOfContent(path, level = 2) {
             spaces = "  ".repeat(hashNumbers - level[0])
             // console.log(spaces)
             t = title.slice(hashNumbers + 2, -1)
-            return `${spaces}- [${t}](#${t.replace(/[&?#/%=+,:;.!]*/g, "").trim().replace(/\s/g, "-").toLowerCase()}) \n`
+            return `${spaces}- [${t}](#${t.trim().replace(/\s/g, "-").replace(/[&?#/%=+,:;\.!]/g, "").toLowerCase()}) \n`
         })
         // console.log(content)
         // return
