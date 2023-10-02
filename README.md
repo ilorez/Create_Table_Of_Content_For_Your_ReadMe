@@ -1,10 +1,13 @@
 # Hello there
 
 
+
 ## Table of Content
 - [Introduction](#introduction) 
 - [For what this script](#for-what-this-script) 
 - [how to use it](#how-to-use-it) 
+  - [path : ](#path) 
+  - [level : ](#level) 
 - [Dummies Notes](#dummies-notes) 
  
 ## Introduction
@@ -18,14 +21,16 @@ it's just make table of content for your readme file, like the table of content 
 ## how to use it
 
 you need just to copy script or clone this repo and change the `path` and `level` inside the `script.js` file.
-path : path to your readme file or any `.md` file.
-level : the number of `#` --> for example this Introduction title have 2 # before it so his level it's 2.
+### path : 
+   - path to your readme file or any `.md` file.
+### level : 
+   - headers size that you want to add to table of Content for example if you want to include header 2 and 3 that start with `##` and `###` you need to send to function an array like this [2,3] or if you want just level 2 send just 2.
 
 ## Dummies Notes
 
-this version it's have a lot of issues and will not give you what you need if you didn't read the next:
+you need to know that:
 
-1. first you need to know that this script create the table of content for .md files that have same templeate like this reamde file you read now
+1. this script create table of contet for just header that created by `#`s.
 2. how it's work:
    - get all title with the level you set
    - make the table of conteant and set it above first title with level that you set
