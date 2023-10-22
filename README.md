@@ -2,6 +2,7 @@
 
 
 
+
 ## Table of Content
 - [Introduction](#introduction) 
 - [For what this script](#for-what-this-script) 
@@ -24,7 +25,7 @@ you need just to copy script or clone this repo and change the `path` and `level
 ### path : 
    - path to your readme file or any `.md` file.
 ### level : 
-   - headers size that you want to add to table of Content for example if you want to include header 2 and 3 that start with `##` and `###` you need to send to function an array like this [2,3] or if you want just level 2 send just 2.
+   - headers size that you want to add to table of Content for example if you want to include header 2 and 3 that start with `##` and `###` you need to send to function an array like this [2,3] or if you want just level 2 send just 2.y
 
 ## Dummies Notes
 
